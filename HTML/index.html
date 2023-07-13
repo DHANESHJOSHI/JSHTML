@@ -1,40 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Html</title>
-</head>
-<body>
-    <details>
-        <summary>My First Heading</summary>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat at fugiat officiis, similique aspernatur amet beatae odit blanditiis. Itaque omnis velit aspernatur nostrum cum cumque at laborum odit ducimus ea.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit pariatur, accusamus autem aliquam vitae, perferendis error cum ipsam ut nulla sequi deleniti voluptatem fugiat neque animi quisquam consectetur facilis! Non alias neque eum illo repellendus quisquam at aperiam, quod consequatur libero atque a beatae, provident iure dicta sapiente illum quasi aliquam iste assumenda excepturi deserunt odit! Unde, commodi architecto quisquam veritatis fugiat numquam voluptatem eum tempora ratione. Similique magni quaerat delectus quod suscipit nisi tempora voluptates soluta aliquid error! Dignissimos pariatur, beatae molestias corporis rem hic deserunt, praesentium dolore, cumque modi fugit nihil accusantium. Mollitia incidunt molestiae hic! Exercitationem, labore!</p>
-    </details>
+    <link rel="stylesheet" href="style.css"> <!--External css-->
+  </head>
+  <style>
+    /*Css Dot(.) Denotes to class and #(Hash) Denotes to ID */
+    /*inline , internal, external css*/
+    /*internal css*/
+    .divex{
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+    }
+    #nonecenter{
+        text-align: left;
+    }
 
-    <div>KL DiV Tag explain krna hai meko </div>
-    <table border="1">
+  </style>
+  <body class="">
+    <div class="divex">
+      <details id="nonecenter">
+        <summary>My First Heading</summary>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat at
+          fugiat officiis, similique aspernatur amet beatae odit blanditiis.
+          Itaque omnis velit aspernatur nostrum cum cumque at laborum odit
+          ducimus ea.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+          pariatur, accusamus autem aliquam vitae, perferendis error cum ipsam
+          ut nulla sequi deleniti voluptatem fugiat neque animi quisquam
+          consectetur facilis! Non alias neque eum illo repellendus quisquam at
+          aperiam, quod consequatur libero atque a beatae, provident iure dicta
+          sapiente illum quasi aliquam iste assumenda excepturi deserunt odit!
+          Unde, commodi architecto quisquam veritatis fugiat numquam voluptatem
+          eum tempora ratione. Similique magni quaerat delectus quod suscipit
+          nisi tempora voluptates soluta aliquid error! Dignissimos pariatur,
+          beatae molestias corporis rem hic deserunt, praesentium dolore, cumque
+          modi fugit nihil accusantium. Mollitia incidunt molestiae hic!
+          Exercitationem, labore!
+        </p>
+      </details>
+
+      <table border="1">
         <tr>
-            <th>No</th>
-            <th>Full Name</th>
-            <th>Age</th>
-            <th>MobNumber</th>
-            <th>Addres</th>
+          <th style="color: red">No</th>  <!-- inline -->
+          <th>Full Name</th>
+          <th>Age</th>
+          <th>MobNumber</th>
+          <th>Addres</th>
         </tr>
-        <tr> 
-            <td>1</td>
-            <td>Dhanesh</td>
-            <td>2</td>
-            <td>789455123</td>
-            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, accusantium repellat sapiente molestias labore iure minus nisi voluptate perferendis veniam placeat rem fuga ad quae consequatur esse, doloribus iste eveniet.</td>
+        <tr>
+          <td>1</td>
+          <td style="background-color: blue; color: white; text-align: center">
+            Dhanesh
+          </td>
+          <td rowspan="2">2</td>
+          <td colspan="2">789455123</td>
+          <td>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+            accusantium repellat sapiente molestias labore iure minus nisi
+            voluptate perferendis veniam placeat rem fuga ad quae consequatur
+            esse, doloribus iste eveniet.
+          </td>
         </tr>
-        <tr> 
-            <td>2</td>
-            <td>Techwithjoshi</td>
-            <td>28</td>
-            <td>789455123</td>
-            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, accusantium repellat sapiente molestias labore iure minus nisi voluptate perferendis veniam placeat rem fuga ad quae consequatur esse, doloribus iste eveniet.</td>
+        <tr>
+          <td>2</td>
+          <td>Techwithjoshi</td>
+          <td>28</td>
+          <td>789455123</td>
+          <td>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+            accusantium repellat sapiente molestias labore iure minus nisi
+            voluptate perferendis veniam placeat rem fuga ad quae consequatur
+            esse, doloribus iste eveniet.
+          </td>
         </tr>
-    </table>
-</body>
+      </table>
+    </div>
+
+    <div>
+        <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+        <ul style="list-style-type: circle;">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+    </div>
+
+    <div class="newtable">
+        <table style="width:100%; border-color: black; border-radius: 5px;" >
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table>
+    </div>
+  </body>
 </html>
